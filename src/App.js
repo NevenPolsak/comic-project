@@ -1,11 +1,13 @@
 import React from 'react';
-import Comic from './Comic';
-
+import Comic from './components/Comic';
 
 function App() {
 	return (
-		<div className="container">
-      <Comic />
+		<div>
+			<div className="heading">
+				<h1>Comic Project</h1>
+			</div>
+			<Comic />
 		</div>
 	);
 }
