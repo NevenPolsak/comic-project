@@ -1,40 +1,20 @@
-* {
-  margin: 0;
-  padding:0;
-  box-sizing:border-box;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-body{
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(236, 221, 221);
-}
-.comiclist{
-  width:90vw;
-  max-width:1170px;
-  margin:5rem auto;
+.cards{
   display: grid;
-  gap: 2rem;
-  
+  justify-content: center;
+  grid-template-columns: auto auto auto;
+  grid-gap:10px;
 }
-
-@media screen and (min-width:768px){
-  .comiclist{
-    grid-template-columns: repeat(3,1fr);
-  }
+.card{
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
 }
-
-.comic{
-  background: #fff;
-  border-radius: 1rem 2rem;
-  padding: 1rem 2rem;
-}
-
-.comic h1 {
-  margin-top: 0.5rem;
-}
-
-.comic h4 {
-  color: #617d98;
-  font-size: 0.75rem;
-  margin-top: 0.25rem;
+img{
+   
+    height: 300px;
 }

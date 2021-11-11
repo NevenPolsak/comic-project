@@ -1,17 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import App from './App';
 import "./index.css";
-import { comics } from "./comics";
-import Comic from "./Comic";
 
-function ComicList() {
-  return (
-    <section className="comiclist">
-      {comics.map((comic) => {
-        return <Comic {...comic}></Comic>;
-      })}
-    </section>
-  );
-}
 
-ReactDOM.render(<ComicList />, document.getElementById("root"));
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+
